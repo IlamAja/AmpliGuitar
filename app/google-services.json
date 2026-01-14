@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "28138052728",
+    "project_id": "ampliguitar-f3232",
+    "storage_bucket": "ampliguitar-f3232.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:28138052728:android:0f72f492ffb86c181e218d",
+        "android_client_info": {
+          "package_name": "com.ampliguitar"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAafqbBtMRPd3sW5aVt9hnN2gMe-pYZBgk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

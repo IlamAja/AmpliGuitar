@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Ini adalah drawable pengganti yang sederhana untuk diagnosis. -->
+    <!-- Jika aplikasi berjalan dengan ini, maka file aslinya adalah penyebab crash. -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M24,24h60v60h-60z" />
+</vector>
