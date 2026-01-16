@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Tema utama aplikasi setelah splash screen selesai -->
+    <style name="Theme.AmpliGuitar" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/british_blue</item>
+        <item name="colorPrimaryVariant">@color/british_blue</item>
+        <item name="colorSecondary">@color/british_red</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="android:colorBackground">@color/white</item>
+        <item name="colorSurface">@color/white</item>
+        <item name="colorOnSurface">@color/black</item>
+        <item name="colorOnBackground">@color/black</item>
+    </style>
+
+    <!-- Tema untuk Splash Screen (tanpa Action Bar) -->
+    <style name="Theme.App.Starting" parent="android:Theme.Material.Light.NoActionBar.Fullscreen">
+        <item name="android:windowBackground">@color/white</item>
+    </style>
+</resources>
