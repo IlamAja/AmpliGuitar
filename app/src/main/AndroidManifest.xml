@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".AmpliGuitarApp"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AmpliGuitar"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.App.Starting">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:theme="@style/Theme.App.Starting"/>
+
+        <!-- Semua aktivitas internal harus memiliki android:exported="false" -->
+        <activity android:name=".auth.LoginActivity" android:exported="false" />
+        <activity android:name=".auth.RegisterActivity" android:exported="false" />
+        <activity android:name=".auth.ForgotPasswordActivity" android:exported="false" />
+        <activity android:name=".customer.MainCustomerActivity" android:exported="false" />
+        <activity android:name=".customer.CatalogActivity" android:exported="false" />
+        <activity android:name=".admin.MainAdminActivity" android:exported="false" />
+        <activity android:name=".admin.ProductManagementActivity" android:exported="false" />
+        <activity android:name=".customer.CheckoutActivity" android:exported="false" />
+        <activity android:name=".customer.OrderConfirmationActivity" android:exported="false" />
+        <activity android:name=".admin.OrderManagementActivity" android:exported="false" />
+        <activity android:name=".customer.CartActivity" android:exported="false" />
+
+        <!-- Aktivitas yang belum terdaftar ditambahkan di sini -->
+        <activity android:name=".customer.OrderHistoryActivity" android:exported="false" />
+        <activity android:name=".admin.UserManagementActivity" android:exported="false" />
+        <activity android:name=".customer.ProductDetailActivity" android:exported="false" />
+        <activity android:name=".profile.ProfileActivity" android:exported="false" />
+
+        <provider
+            android:name="com.google.firebase.provider.FirebaseInitProvider"
+            android:authorities="${applicationId}.firebaseinitprovider"
+            android:exported="false" />
+
+    </application>
+
+</manifest>
